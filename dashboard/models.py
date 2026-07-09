@@ -5,7 +5,7 @@ class DimCity(models.Model):
     city_name = models.CharField(max_length=100)
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'dim_city'
 
 class DimCustomer(models.Model):
@@ -15,7 +15,7 @@ class DimCustomer(models.Model):
     city_id = models.ForeignKey(DimCity, on_delete=models.DO_NOTHING, db_column='city_id', null=True, blank=True)
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'dim_customer'
 
 class DimDriver(models.Model):
@@ -26,7 +26,7 @@ class DimDriver(models.Model):
     status = models.CharField(max_length=20, default='Active')
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'dim_driver'
 
 class DimTime(models.Model):
@@ -39,7 +39,7 @@ class DimTime(models.Model):
     month_name = models.CharField(max_length=20, null=True, blank=True)
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'dim_time'
 
 class DimVehicle(models.Model):
@@ -51,7 +51,7 @@ class DimVehicle(models.Model):
     status = models.CharField(max_length=20, default='Active')
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'dim_vehicle'
 
 class FactDelivery(models.Model):
@@ -70,7 +70,7 @@ class FactDelivery(models.Model):
     status = models.CharField(max_length=20, default='Delivered')
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'fact_delivery'
 
 

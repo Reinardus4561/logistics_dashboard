@@ -75,6 +75,7 @@ GitPython==3.1.50
 googleapis-common-protos==1.75.0
 greenlet==3.3.2
 grpcio==1.80.0
+gunicorn==26.0.0
 h11==0.16.0
 hf-xet==1.5.0
 html5lib==1.1
@@ -299,8 +300,11 @@ webcolors==25.10.0
 webencodings==0.5.1
 websocket-client==1.9.0
 websockets==16.0
+whitenoise==6.12.0
 xhtml2pdf==0.2.17
 xxhash==3.7.0
 yarl==1.23.0
 zipp==4.1.0
 zstandard==0.25.0
+gunicorn==21.2.0
+whitenoise==6.6.0

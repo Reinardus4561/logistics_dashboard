@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: logistics-dashboard
+    env: python
+    buildCommand: "chmod +x build.sh && ./build.sh"
+    startCommand: "gunicorn logistics_dashboard.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.6
+      - key: RENDER
+        value: "True"
+      - key: DB_ENGINE
+        value: sqlite
+      - key: DEBUG
+        value: "False"

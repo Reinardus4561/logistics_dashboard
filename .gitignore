@@ -1,0 +1,13 @@
+*.pyc
+__pycache__/
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+.env
+venv/
+.venv/
+.agents/
+.gemini/
+.idea/
+.vscode/
+*.log
